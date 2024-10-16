@@ -5,7 +5,7 @@ def calculate_survival_duration():
   # Split by comma and space to allow for more flexible user input
   time_units=input().lower().split(", ")  
   # calculate survival duration in seconds
-  survival_duration_seconds = age*365.25*24*60*60  # This line was moved inside the function
+  survival_duration_seconds = age*365.25*24*60*60 
   # convert seconds to different time units
   survival_duration_months = survival_duration_seconds//(30*24*60*60)
   survival_duration_weeks = survival_duration_seconds//(7*24*60*60)
@@ -22,9 +22,9 @@ def calculate_survival_duration():
     print(f"{survival_duration_days}days")
   if 'hours'in time_units:
     print(f"{survival_duration_hours}hours")
-  if 'minuts' in time_units: #Typo here, should be 'minutes'
+  if 'minutes' in time_units: 
     print(f"{survival_duration_minutes}minutes")
   if 'seconds' in time_units:
     print(f"{round(survival_duration_seconds)}seconds")
-
-calculate_survival_duration() # Call the function to execute it
+  # execute the code 
+ calculate_survival_duration()
